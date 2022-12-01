@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Active component example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/styles/style.css">
+      <script src="script.js"></script>
+      <script src="jquery-1.10.2.min.js"></script>
+   </head>
+   <body>
+      <main id="layer">
+         <div class="home">
+            <div class="nav-container" id="navbar">
+               <nav>
+                  <h1 id="logo">SingleCore</h1>
+                  <ul>
+                     <li><a class="order">Order</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="showcase">
+               <div class="info">
+                  <h3>Small but powerful.</h3>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by 
+                    injected humour, or randomised words which don't look even 
+                    slightly believable.
+                  </p>
+               </div>
+               <div id="main">
+                  <div id="object1">
+                     <img src="image/aa.img.png" alt=""/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <script>
+         var object1=$('#object1');
+         var layer=$('#layer');
+         
+         layer.mousemove(function(e){
+            var valueX=(e.pageX * -1 / 30); 
+            var valueY=(e.pageY * -1 / 23); 
+             
+             object1.css({
+                 'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
+             });
+         });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,151 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: monospace, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: monospace, sans-serif;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  -webkit-text-decoration: 1;
+          text-decoration: 1;
+}
+
+.home {
+  background: radial-gradient(#525252, #131313);
+
+}
+
+.nav-container {
+  background: #070707;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: block;
+  -webkit-transition: top 0.4s;
+  transition: top 0.4s;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 5vh;
+  max-height: 8vh;
+  padding: 3rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  top: 0;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+}
+
+nav #logo {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.order {
+  background-color: #004bd6;
+  padding: 0.75rem 1.8rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.showcase {
+  display: -ms-grid;
+  display: grid;
+  min-height: 95vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[3] 10%;
+      grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+}
+
+.showcase #object1 {
+  position: absolute;
+  top: 30em;
+  right: 30em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 1;
+  -webkit-transition: linear 31ms;
+  transition: linear 31ms;
+}
+
+.showcase .info {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.showcase .info h3 {
+  padding-bottom: 3rem;
+}
+
+#layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
