@@ -1,3 +1,4 @@
+// This script is to hide the navBar upon scroll
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
