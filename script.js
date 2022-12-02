@@ -1,4 +1,5 @@
 // This script is to hide the navBar upon scroll
+// Animation script is in the main html file.
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
