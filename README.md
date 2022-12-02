@@ -1,4 +1,4 @@
-# Floating_element-js-
+# Floating_element
 
 Floating element based on mouse movement (click on gif to open youtube demo): 
 
